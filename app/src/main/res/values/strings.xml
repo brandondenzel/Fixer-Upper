@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Testing</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_title">List</string>
+    <string name="first_button">first button</string>
+    <string name="second_button">second button</string>
+    <string name="third_button">third button</string>
+    <string name="fourth_button">fourth button</string>
+    <string name="first_Quote">first quote</string>
+    <string name="second_Quote">second quote</string>
+    <string name="third_Quote">third quote</string>
+    <string name="fourth_Quote">fourth quote</string>
+    <string name="back">Back</string>
+    <string name="title">Fixer-Upper</string>
+    <string name="title_click">click</string>
+
+</resources>

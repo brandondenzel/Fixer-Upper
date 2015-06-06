@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:tag="main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_title"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_margin="10sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/theListView"
+        android:dividerHeight="10sp"/>
+
+<!--
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_first_button"
+            android:text="@string/first_button"
+            android:textSize="15sp"
+            android:layout_margin="1sp"
+            android:onClick="firstButton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_second_button"
+            android:text="@string/second_button"
+            android:textSize="15sp"
+            android:layout_margin="1sp"
+            android:onClick="secondButton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_third_button"
+            android:text="@string/third_button"
+            android:textSize="15sp"
+            android:layout_margin="1sp"
+            android:onClick="thirdButton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_fourth_button"
+            android:text="@string/fourth_button"
+            android:textSize="15sp"
+            android:layout_margin="1sp"
+            android:onClick="fourthButton"/>-->
+</LinearLayout>

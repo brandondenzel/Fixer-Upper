@@ -15,4 +15,10 @@
     <string name="title">Fixer-Upper</string>
     <string name="title_click">click</string>
 
+    <string-array name="quoteArray">
+        <item>First quote</item>
+        <item>Second quote</item>
+        <item>Third quote</item>
+    </string-array>
+
 </resources>

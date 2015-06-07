@@ -7,9 +7,10 @@
     android:tag="button">
 
     <TextView
+        android:id="@+id/firstButtonQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/first_Quote"
+        android:text=""
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:typeface="normal"

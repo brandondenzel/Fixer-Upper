@@ -1,8 +1,10 @@
 package com.example1.brandon.testing;
 //testing
+import android.content.res.Resources;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -20,6 +22,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Random;
 
 import java.util.logging.Handler;
 
@@ -30,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.title);
+
         //ActionBar actionBar = getSupportActionBar();
         //actionBar.setDisplayHomeAsUpEnabled(true);
 
@@ -62,6 +66,14 @@ public class MainActivity extends ActionBarActivity {
                     String button = String.valueOf(parent.getItemAtPosition(position));
                     if (button == "first button") {
                         setContentView(R.layout.first_button_main);
+                        Resources res = getResources();
+                        String[] quotes = res.getStringArray(R.array.quoteArray);
+                        int num = quotes.length;
+                        Random randomGenerator = new Random();
+                        int randomInt = randomGenerator.nextInt(num);
+                        final TextView quote = (TextView) findViewById(R.id.firstButtonQuote);
+                        String quote1 = quotes[randomInt];
+                        quote.setText(quote1);
                     } else if (button == "second button") {
                         setContentView(R.layout.second_button_main);
                     } else if (button == "third button") {
@@ -112,27 +124,7 @@ public class MainActivity extends ActionBarActivity {
         anim.setRepeatCount(Animation.INFINITE);
         myText.startAnimation(anim);
     }
-    public void firstButton(View view)
-    {
-        setContentView(R.layout.first_button_main);
-    }
-    public void secondButton(View view)
-    {
-        setContentView(R.layout.second_button_main);
-    }
-    public void thirdButton(View view)
-    {
-        setContentView(R.layout.third_button_main);
-    }
-    public void fourthButton(View view)
-    {
-        setContentView(R.layout.fourth_button_main);
-    }
 
-    public void back(View view)
-    {
-        createList(view);
-    }
 
     public void createList(View view)
     {
@@ -149,6 +141,14 @@ public class MainActivity extends ActionBarActivity {
                 if (button == "first button")
                 {
                     setContentView(R.layout.first_button_main);
+                    Resources res = getResources();
+                    String[] quotes = res.getStringArray(R.array.quoteArray);
+                    int num = quotes.length;
+                    Random randomGenerator = new Random();
+                    int randomInt = randomGenerator.nextInt(num);
+                    final TextView quote = (TextView) findViewById(R.id.firstButtonQuote);
+                    String quote1 = quotes[randomInt];
+                    quote.setText(quote1);
                 }
                 else if (button == "second button")
                 {
